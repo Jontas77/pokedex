@@ -4,6 +4,8 @@ import React from "react";
 import Logo from "./components/Logo";
 import BestPokemon from "./components/BestPokemon";
 import CaughtPokemon from "./components/CaughtPokemon";
+import PokemonMovesSelector from "./components/PokemonMovesSelector";
+import PokemonCity from "./components/PokemonCity";
 
 const App = () => {
   const abilities = ["Anticipation", "Adaptability", "Run-Away"];
@@ -16,6 +18,8 @@ const App = () => {
       <Logo appName="Jonathan's Pokedex" handleClick={logWhenClicked} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 };
